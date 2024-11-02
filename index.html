@@ -1,21 +1,68 @@
-<html>
-    <head>
-        <link rel="stylesheet" href="log.css">
-        <body>
-           
-            <h1>FIRST WEBSITE</h1>
-            <p>THIS IS MY FIRST WEBSITE</p>
-            <marquee>support</marquee>
-        <div>
-            <img src="a1.jpg" width="100" height="100">
-            <form>
-                <b><p>ENTER USERNAME: <input type="text" placeholder="USERNAME" required></p></b>
-                <b><p>ENTER PASSWORD: <input type="password" placeholder="PASSWORD" required></p></b>
-                <button type="submit" class="button"><a href="#">SUBMIT</a></button>
-            </form>
-            
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>My Portfolio</h1>
+        <nav>
+            <a href="#projects">Projects</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    
+    <section id="app"></section>
+    <section id="projects">
+        <h2>Projects</h2>
+        <div id="gallery"></div>
+    </section>
+    <section id="about">
+        <h2>About Me</h2>
+        <p>This is my bio.</p>
+    </section>
+
+    <section id="gallery">
+        <h2>My Projects</h2>
+        <div class="gallery-grid">
+          <img src="ani avengers.jpg" alt="Project 1 Description">
+          <img src="ani avengers.jpg" alt="Project 2 Description">
+          <img src="ani avengers.jpg" alt="Project 3 Description">
+          <!-- Add more images as needed -->
         </div>
-            
-        </body>
-    </head>
+    </section>
+    <section id="bio">
+        <h2>About Me</h2>
+        <p>
+          Hi, I'm S B ANIRUDDH, an engineering student specializing in Information Technology. 
+          I create web related projects. 
+          My work is influenced by [your influences]. 
+          Feel free to reach out for collaboration!
+        </p>
+    </section>
+    
+    <!-- Resume Input Section -->
+    <section id="resume-input">
+        <h2>Enter Your Details</h2>
+        <label>Name: <input type="text" id="name" /></label><br>
+        <label>About Me: <textarea id="about"></textarea></label><br>
+        <label>Contact: <input type="text" id="contact-info" /></label><br>
+        <label>Upload Photo: <input type="file" id="photo" accept="image/*" /></label><br>
+        <button onclick="generatePDF()">Download PDF</button>
+    </section>
+    
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+        <p>LinkedIn: <a href="https://linkedin.com/in/yourprofile">linkedin.com/in/yourprofile</a></p>
+        <!-- You can add more contact methods as needed -->
+    </section>
+
+    <!-- Link to your app.js file as a module -->
+    <script src="app.js" type="module"></script>
+</body>
 </html>
